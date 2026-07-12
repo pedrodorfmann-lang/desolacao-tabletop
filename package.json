@@ -1,0 +1,43 @@
+{
+  "name": "desolacao-table",
+  "version": "0.1.0",
+  "description": "Mesa digital para Ordem Paranormal: Desolação — mapa no monitor da mesa, controle no notebook do mestre.",
+  "main": "./out/main/index.js",
+  "author": "Pedro",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev -w",
+    "build": "electron-vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.web.json && tsc --noEmit -p tsconfig.node.json",
+    "dist": "electron-vite build && electron-builder --win"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3"
+  },
+  "devDependencies": {
+    "@fontsource/barlow-condensed": "^5.2.5",
+    "@fontsource/inter": "^5.2.5",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.4.1",
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12",
+    "electron-vite": "^4.0.0",
+    "nanoid": "^5.1.5",
+    "pixi.js": "^8.9.1",
+    "png-to-ico": "^3.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0",
+    "zustand": "^5.0.5"
+  },
+  "allowScripts": {
+    "electron@37.10.3": true,
+    "electron-winstaller@5.4.0": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.1": true
+  }
+}

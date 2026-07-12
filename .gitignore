@@ -1,0 +1,22 @@
+# Dependências e saídas de build
+node_modules/
+out/
+dist/
+release/
+
+# Conteúdo local pesado / de terceiros (não versionar) — mapas e tokens do mestre
+MAPAS/
+TOKENS/
+
+# Logs e temporários
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+
+# Config local do Claude Code (permissões específicas da máquina)
+.claude/settings.local.json

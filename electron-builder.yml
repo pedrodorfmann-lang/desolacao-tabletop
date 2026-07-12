@@ -1,0 +1,24 @@
+appId: com.pedro.desolacao-tabletop
+productName: Desolação Tabletop
+directories:
+  # Fora do OneDrive: dentro dele o electron-builder falha no chmod dos
+  # recursos (EPERM), pois o OneDrive gerencia/sincroniza os arquivos copiados.
+  output: C:/Users/pedro/AppData/Local/DesolacaoTable-dist
+  buildResources: build
+files:
+  - out/**
+  - package.json
+extraResources:
+  - from: assets
+    to: assets
+asarUnpack:
+  - resources/**
+win:
+  icon: build/icon.ico
+  target:
+    - nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  shortcutName: Desolação Tabletop
